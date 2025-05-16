@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <!-- GET-->
+
+      <h1>Pegar Postagens</h1>
+
+      <input id="numero" type="number" min="1" max="100" value="1" />
+      <button onclick="getPostagem(numero.value)">Buscar</button>
+
+      <div id="resp">
+        <p class="campo">Resposta:</p>
+        <p id="respjson"></p>
+      </div>
+
+    <!-- GET ALL-->
+
+      <h1>Pegar todas as Postagens</h1>
+
+      <button onclick="getPostagens()">Buscar</button>
+
+      <div id="resp">
+        <p class="campo">Resposta:</p>
+        <p id="respjsonall"></p>
+      </div>
+
+    <!-- POST-->
+
+      <h1>Postar</h1>
+
+      <button onclick="postPostagens()">Enviar</button>
+
+      <div id="resp">
+        <p class="campo">Resposta:</p>
+        <p id="respjsonpost"></p>
+      </div>
+
+    <!-- PUT-->
+
+      <h1>Atualizar uma Postagem</h1>
+
+      <button onclick="atualizarPostagens()">Atualizar</button>
+
+      <div id="resp">
+        <p class="campo">Resposta:</p>
+        <p id="respjsonput"></p>
+      </div>
+
+    <!-- PATCH-->
+
+    <h1>Atualizar toda a Postagem</h1>
+
+      <input id="attall" type="number" min="1" max="100" value="1" />
+      <button onclick="modificarPostagens(attall.value)">Modificar</button>
+
+      <div id="resp">
+        <p class="campo">Resposta:</p>
+        <p id="respjsonpatch"></p>
+      </div>
+    
+    <!-- DELETE-->
+
+    <h1>Deletar uma Postagem</h1>
+
+      <input id="deletepost" type="number" min="1" max="100" value="1" />
+      <button onclick="removerPostagem(deletepost.value)">Remover</button>
+
+      <div id="resp">
+        <p class="campo">Resposta:</p>
+        <p id="respjsondel"></p>
+      </div>
+    </main>
+
+    <script src="srcipt.js"></script>
+</body>
+</html>
